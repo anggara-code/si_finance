@@ -27,6 +27,12 @@ class Santri_model extends CI_Model {
         $this->db->insert('data_santri', $data);
         
     }
+
+    public function hapusDataSantri($nis)
+    {
+        $this->db->where('nis', $nis);
+        $this->db->delete('data_santri');
+    }
 }
 
 ?>

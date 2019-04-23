@@ -38,6 +38,12 @@
             redirect('santri');
             }
         }
+
+        public function hapus($nis)
+        {
+            $this->Santri_model->hapusDataSantri($nis);
+            redirect('santri');
+        }
     }
 
 ?>
