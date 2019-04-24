@@ -15,14 +15,19 @@
             // $this->load->database(); load db permethod
 
             $data['judul'] = 'Daftar Santri';
+            
+            if(!isset($_POST['cari'])) {
+                $data['santri'] = $this->Santri_model->getAllSantri();
+                $this->load->view('templates/header', $data);
+                $this->load->view('santri/index', $data);
+                $this->load->view('templates/footer');
+            } else {
+                $data['santri'] = $this->Santri_model->cariDataSantri();
+                $this->load->view('templates/header', $data);
+                $this->load->view('santri/index', $data);
+                $this->load->view('templates/footer');
+            }
 
-            // memanggil method
-            $data['santri'] = $this->Santri_model->getAllSantri();
-
-            // load view
-            $this->load->view('templates/header', $data);
-            $this->load->view('santri/index', $data);
-            $this->load->view('templates/footer');
         }
 
         public function tambah()
@@ -43,6 +48,31 @@
         {
             $this->Santri_model->hapusDataSantri($nis);
             redirect('santri');
+        }
+
+        public function detail($nis)
+        {
+            $data['judul'] = 'Detail Santri';
+
+            $data['santri'] = $this->Santri_model->getSantriById($nis);
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('santri/detail', $data);
+            $this->load->view('templates/footer');
+        }
+
+        public function ubah($nis)
+        {
+            if(!isset($_POST['ubah'])){
+                $data['judul'] = 'Ubah Data Santri';
+                $data['santri'] = $this->Santri_model->getSantriById($nis);
+                $this->load->view('templates/header', $data);
+                $this->load->view('santri/ubah', $data);
+                $this->load->view('templates/footer');
+            } else {
+                $this->Santri_model->ubahDataSantri();
+                redirect('santri');
+            }
         }
     }
 
