@@ -13,6 +13,9 @@
                             <input type="number" name="nis" class="form-control" id="nis">
                         </div>
                         <div class="form-group">
+                            <input type="hidden" name="id_login" class="form-control" value="2">
+                        </div>
+                        <div class="form-group">
                             <label for="nama">Nama</label>
                             <input type="text" name="nama" class="form-control" id="nama">
                         </div>
@@ -55,6 +58,14 @@
                         <div class="form-group">
                             <label for="telp_orangtua">Telephone Orangtua</label>
                             <input type="number" name="telp_orangtua" class="form-control" id="telp_orangtua">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" name="password" class="form-control" id="password">
                         </div>
                         <button type="submit" name="tambah" class="btn btn-primary">Tambah Data</button>
                     </form>

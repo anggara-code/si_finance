@@ -12,8 +12,8 @@ class Pembayaran_model extends CI_Model {
     public function getDetailTagihan($id)
     {
         $this->db->select('*');
-        $this->db->from('jenis_pembayaran a'); 
-        $this->db->join('penagihan b', 'b.id_jenis_pembayaran=a.id_jenis_pembayaran');
+        $this->db->from('jenis_pembayaran AS a'); 
+        $this->db->join('penagihan AS b', 'b.id_jenis_pembayaran=a.id_jenis_pembayaran');
         $this->db->where('a.id_jenis_pembayaran', $id);
         $this->db->order_by('b.tanggal','desc');         
         $query = $this->db->get(); 
@@ -30,8 +30,8 @@ class Pembayaran_model extends CI_Model {
     public function getDetailTagihanByPenagihan($id)
     {
         $this->db->select('*');
-        $this->db->from('jenis_pembayaran a'); 
-        $this->db->join('penagihan b', 'b.id_jenis_pembayaran=a.id_jenis_pembayaran');
+        $this->db->from('jenis_pembayaran AS a'); 
+        $this->db->join('penagihan AS b', 'b.id_jenis_pembayaran=a.id_jenis_pembayaran');
         $this->db->where('b.id_penagihan', $id);       
         $query = $this->db->get(); 
         if($query->num_rows() != 0)

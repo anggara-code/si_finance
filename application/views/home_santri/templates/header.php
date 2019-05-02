@@ -25,9 +25,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/santri">Santri</a>
-      <!-- <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/bendahara">Bendahara</a> -->
-      <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/penagihan">Penagihan</a>
+      <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/HomeSantri">Pembayaran <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="<?php echo base_url(); ?>">Logout <span class="sr-only">(current)</span></a>
       <!-- <a class="nav-item nav-link" href="#">About</a> -->
     </div>

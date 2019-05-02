@@ -56,6 +56,14 @@
                             <label for="telp_orangtua">Telephone Orangtua</label>
                             <input type="number" name="telp_orangtua" class="form-control" id="telp_orangtua" value="<?php echo $santri['telp_orangtua']; ?>">
                         </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" class="form-control" id="username" value="<?php echo $santri['username']; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" name="password" class="form-control" id="password" value="<?php echo $santri['password']; ?>">
+                        </div>
                         <button type="submit" name="ubah" class="btn btn-primary">Ubah Data</button>
                     </form>
                 </div>

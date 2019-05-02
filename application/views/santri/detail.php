@@ -18,6 +18,8 @@
                     <h5 class="card-title">Nama Wali : <?php echo $santri['nama_wali']; ?></h5>
                     <h5 class="card-title">Alamat Orangtua : <?php echo $santri['alamat_orangtua']; ?></h5>
                     <h5 class="card-title">Telp Orangtua : <?php echo $santri['telp_orangtua']; ?></h5>
+                    <h5 class="card-title">Username : <?php echo $santri['username']; ?></h5>
+                    <h5 class="card-title">Password : <?php echo $santri['password']; ?></h5>
                     <a href="<?php echo base_url(); ?>index.php/santri" class="btn btn-primary">kembali</a>
                 </div>
             </div>

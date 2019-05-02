@@ -11,6 +11,7 @@ class Santri_model extends CI_Model {
     {
         $data = [
             "nis" => $this->input->post('nis', true),
+            "id_login" => $this->input->post('id_login', true),
             "nama" => $this->input->post('nama', true),
             "alamat" => $this->input->post('alamat', true),
             "no_hp" => $this->input->post('no_hp', true),
@@ -21,7 +22,9 @@ class Santri_model extends CI_Model {
             "nama_ibu" => $this->input->post('nama_ibu', true),
             "nama_wali" => $this->input->post('nama_wali', true),
             "alamat_orangtua" => $this->input->post('alamat_orangtua', true),
-            "telp_orangtua" => $this->input->post('telp_orangtua', true)
+            "telp_orangtua" => $this->input->post('telp_orangtua', true),
+            "username" => $this->input->post('username', true),
+            "password" => $this->input->post('password', true)
         ];
 
         $this->db->insert('data_santri', $data);
@@ -53,7 +56,9 @@ class Santri_model extends CI_Model {
             "nama_ibu" => $this->input->post('nama_ibu', true),
             "nama_wali" => $this->input->post('nama_wali', true),
             "alamat_orangtua" => $this->input->post('alamat_orangtua', true),
-            "telp_orangtua" => $this->input->post('telp_orangtua', true)
+            "telp_orangtua" => $this->input->post('telp_orangtua', true),
+            "username" => $this->input->post('username', true),
+            "password" => $this->input->post('password', true)
         ];
 
         $this->db->where('nis', $data['nis']);
