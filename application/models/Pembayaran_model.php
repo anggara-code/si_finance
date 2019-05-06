@@ -43,6 +43,18 @@ class Pembayaran_model extends CI_Model {
             return false;
         }
     }
+
+    public function tambahDataDispen()
+    {
+        $data = [
+            "id_penagihan" => $this->input->post('id_penagihan', true),
+            "nis" => $this->input->post('nis', true),
+            "nama_jenis_pembayaran" => $this->input->post('nama_jenis_pembayaran', true),
+            "tanggal_dispen" => $this->input->post('tanggal_dispen', true)
+        ];
+
+        $this->db->insert('dispen', $data);
+    }
 }
 
 ?>

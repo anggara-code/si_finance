@@ -27,7 +27,7 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/HomeSantri">Pembayaran <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="<?php echo base_url(); ?>">Logout <span class="sr-only">(current)</span></a>
-      <!-- <a class="nav-item nav-link" href="#">About</a> -->
+      <!-- <?php echo $this->session->userdata('nis') ?> -->
     </div>
   </div>
 </div>

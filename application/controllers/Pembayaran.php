@@ -39,6 +39,11 @@ class Pembayaran extends CI_Controller {
         $this->load->view('home_santri/templates/header', $data);
         $this->load->view('pembayaran/form_pembayaran', $data);
         $this->load->view('home_santri/templates/footer');
+
+        if(isset($_POST['dispen'])) {
+            $this->Pembayaran_model->tambahDataDispen();
+            redirect('HomeSantri');
+        }
     }
 }
 
