@@ -23,7 +23,7 @@ class Login extends CI_Controller {
 			 $row = $query->row_array();
 			 $sess_array = array(
 				 'id_login'=> $row['id_login'],
-				 'niss'=> $row['nis'],
+				 'nis'=> $row['nis'],
 				 'level' => $row['level'],	
 				 'username'=> $row['username']
 				);
