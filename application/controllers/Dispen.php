@@ -11,7 +11,7 @@ class Dispen extends CI_Controller
 
     public function index()
     {
-        $data['judul'] = 'Daftar Dispen';    
+        $data['judul'] = 'Daftar Dispen';
         $data['dispen'] = $this->Dispen_model->getAllDispen();
 
         $this->load->view('templates/header', $data);

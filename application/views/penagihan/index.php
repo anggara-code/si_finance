@@ -26,6 +26,25 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                Form Tambah Jenis Pembayaran
+            </div>
+                <div class="card-body">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="jenis_pembayaran">Jenis Pembayaran</label>
+                            <input type="text" name="nama_jenis_pembayaran" class="form-control" id="jenis_pembayaran">
+                            <br>
+                            <label for="nominal">Nominal</label>
+                            <input type="text" name="nominal" class="form-control" id="nominal">
+                        </div>
+                        <button type="submit" name="tambah_jenis_pembayaran" class="btn btn-success">Simpan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

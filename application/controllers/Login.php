@@ -52,11 +52,12 @@ class Login extends CI_Controller {
 					// var_dump($session_data);
 					 redirect('Santri','refresh');
 
+				}elseif(($session_data['username']=='donatur') && ($session_data['level']=='santri')){
+					redirect('HomeDonatur/donasi','refresh');
+					
 				}elseif(($session_data['username']) && ($session_data['level']=='santri')){
 					redirect('HomeSantri','refresh');
 				
-				}else{
-					redirect('Welcome','refresh');
 				}
 			}	
  		}	

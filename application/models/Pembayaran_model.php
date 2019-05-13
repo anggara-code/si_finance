@@ -44,6 +44,18 @@ class Pembayaran_model extends CI_Model {
         }
     }
 
+    public function tambahDataPembayaran()
+    {
+        $data = [
+            "id_penagihan" => $this->input->post('id_penagihan', true),
+            "nis" => $this->input->post('nis', true),
+            "rekening_pengirim" => $this->input->post('rekening_pengirim', true),
+            "tanggal_pembayaran" => $this->input->post('tanggal_pembayaran', true),
+            "status" => $this->input->post('status', true)
+        ];
+
+        $this->db->insert('pembayaran', $data);
+    }
     public function tambahDataDispen()
     {
         $data = [

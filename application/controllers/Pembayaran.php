@@ -44,6 +44,11 @@ class Pembayaran extends CI_Controller {
             $this->Pembayaran_model->tambahDataDispen();
             redirect('HomeSantri');
         }
+
+        if(isset($_POST['tambah'])) {
+            $this->Pembayaran_model->tambahDataPembayaran();
+            redirect('HomeSantri');
+        }
     }
 }
 

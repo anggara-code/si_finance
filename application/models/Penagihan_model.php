@@ -19,6 +19,17 @@ class Penagihan_model extends CI_Model {
         $this->db->insert('penagihan', $data);
         
     }
+
+    public function tambahDataJenisPembayaran()
+    {
+        $data = [
+            "nama_jenis_pembayaran" => $this->input->post('nama_jenis_pembayaran', true),
+            "nominal" => $this->input->post('nominal', true)
+        ];
+
+        $this->db->insert('jenis_pembayaran', $data);
+        
+    }
 }
 
 ?>

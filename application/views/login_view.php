@@ -9,7 +9,7 @@
         <input type="password" placeholder="Password" name="password" class="form-control"/>
         <!-- <input type="password" placeholder="Password" name="password" class="form-control"/> -->
         <input type="submit" value="Login" />
-        <a href="<?php echo site_url()?>/Login/Registrasi"> Lost your password? </a>
+        <a href="<?php echo site_url()?>/donatur"> Lost your password? </a>
       </form>
     </div> 
   </div> 
