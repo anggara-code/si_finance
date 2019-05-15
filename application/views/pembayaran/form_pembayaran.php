@@ -1,5 +1,4 @@
 <div class="container">
-
     <div class="row mt-3">
         <div class="col-md-6">
             <div class="card">
@@ -24,7 +23,7 @@
                             <input type="date" name="tanggal" class="form-control" id="tanggal" value="<?php echo $detail['tanggal']; ?>" readonly>
                             <br>
                             <label for="rekening_pengirim">Rekening Pengirim</label>
-                            <input type="number" name="rekening_pengirim" class="form-control" id="rekening_pengirim">
+                            <input type="number" name="rekening_pengirim" class="form-control" id="rekening_pengirim" value="<?php echo $donatur[0]['no_rekening']; ?>" readonly>
                             <br>
                             <label for="tanggal">Tanggal Pembayaran</label>
                             <input type="date" name="tanggal_pembayaran" class="form-control" id="tanggal">

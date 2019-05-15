@@ -67,6 +67,12 @@ class Pembayaran_model extends CI_Model {
 
         $this->db->insert('dispen', $data);
     }
+
+    public function getDonatur()
+    {
+        $username = $this->session->userdata('username');
+        return $this->db->get_where('data_santri', array('username' => $username))->result_array();
+    }
 }
 
 ?>

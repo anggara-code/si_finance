@@ -1,3 +1,4 @@
+<!-- <?php echo var_dump($donatur); ?> -->
 <div class="container">
 
     <div class="row mt-3">
@@ -22,7 +23,7 @@
                             </select>
                             <br>
                             <label for="no_rekening">Nomor Rekening</label>
-                            <input type="text" name="no_rekening" class="form-control" id="no_rekening" >
+                            <input type="text" name="no_rekening" class="form-control" id="no_rekening" value="<?php echo $donatur[0]['no_rekening']; ?>" readonly>
                             <br>
                             <label for="nominal">Nominal</label>
                             <input type="number" name="nominal" class="form-control" id="nominal" >

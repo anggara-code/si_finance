@@ -23,6 +23,7 @@ class HomeDonatur extends CI_Controller {
     {
         $data['judul'] = 'Tambah Pembayaran Donasi';
         $data['detail'] = $this->Donatur_model->getAllJenisDonasi();
+        $data['donatur'] = $this->Donatur_model->getDonatur();
         
         if(!isset($_POST['tambah'])) {
             $this->load->view('home_donatur/templates/header', $data);

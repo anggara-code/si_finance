@@ -35,6 +35,7 @@ class Pembayaran extends CI_Controller {
     {
         $data['judul'] = 'Detail Pembayaran';
         $data['detail'] = $this->Pembayaran_model->getDetailTagihanByPenagihan($id);
+        $data['donatur'] = $this->Pembayaran_model->getDonatur();
 
         $this->load->view('home_santri/templates/header', $data);
         $this->load->view('pembayaran/form_pembayaran', $data);

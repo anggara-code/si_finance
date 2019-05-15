@@ -56,6 +56,10 @@
                             <label for="password">Password</label>
                             <input type="text" name="password" class="form-control" id="password">
                         </div>
+                        <div class="form-group">
+                            <label for="no_rekening">NO Rekening</label>
+                            <input type="text" name="no_rekening" class="form-control" id="no_rekening">
+                        </div>
                         <button type="submit" name="tambah" class="btn btn-primary">Tambah Data</button>
                     </form>
                 </div>

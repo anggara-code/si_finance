@@ -17,7 +17,8 @@ class Donatur_model extends CI_Model {
             "alamat" => $this->input->post('alamat', true),
             "no_hp" => $this->input->post('no_hp', true),
             "username" => $this->input->post('username', true),
-            "password" => $this->input->post('password', true)
+            "password" => $this->input->post('password', true),
+            "no_rekening" => $this->input->post('no_rekening', true)
         ];
 
         $this->db->insert('data_santri', $data);
@@ -56,6 +57,12 @@ class Donatur_model extends CI_Model {
     public function getAllJenisDonasi()
     {
         return $this->db->get('jenis_donasi')->result_array();
+    }
+
+    public function getDonatur()
+    {
+        $username = $this->session->userdata('username');
+        return $this->db->get_where('data_santri', array('username' => $username))->result_array();
     }
 }
 
