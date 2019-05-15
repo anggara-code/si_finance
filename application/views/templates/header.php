@@ -28,10 +28,8 @@
       <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/santri">Santri</a>
       <!-- <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/bendahara">Bendahara</a> -->
       <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/penagihan">Penagihan</a>
+      <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/donasi">Donasi</a>
       <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/laporan">Laporan</a>
-      <!-- <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/dispen">Dispen</a>
-      <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/detailPembayaran">Pembayaran</a>
-      <a class="nav-item nav-link" href="<?php echo base_url(); ?>index.php/detailDonasi">Donasi</a> -->
       <a class="nav-item nav-link" href="<?php echo base_url(); ?>">Logout <span class="sr-only">(current)</span></a>
       <!-- <a class="nav-item nav-link" href="#">About</a> -->
     </div>

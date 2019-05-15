@@ -28,6 +28,7 @@ class Donatur_model extends CI_Model {
     {
         $data = [
             "nis" => $this->input->post('nis', true),
+            "nama_jenis_donasi" => $this->input->post('nama_jenis_donasi', true),
             "no_rekening" => $this->input->post('no_rekening', true),
             "nominal" => $this->input->post('nominal', true)
         ];
@@ -50,6 +51,11 @@ class Donatur_model extends CI_Model {
         {
             return false;
         }
+    }
+
+    public function getAllJenisDonasi()
+    {
+        return $this->db->get('jenis_donasi')->result_array();
     }
 }
 

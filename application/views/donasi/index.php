@@ -6,6 +6,7 @@
             <thead>
               <tr>
                 <th scope="col">Nama Donatur</th>
+                <th scope="col">Jenis Donasi</th>
                 <th scope="col">No Rekening</th>
                 <th scope="col">Nominal</th>
               </tr>
@@ -15,6 +16,7 @@
                 <?php foreach($detail as $det) : ?>
                   <tr> 
                     <td><?php echo $det['nama']; ?></td>
+                    <td><?php echo $det['nama_jenis_donasi']; ?></td>
                     <td><?php echo $det['no_rekening']; ?></td>
                     <td><?php echo $det['nominal']; ?></td>
                   </tr>
